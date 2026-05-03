@@ -1,0 +1,44 @@
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== DESIGN TOKENS ===== */
+:root {
+  --bg: #0b1220;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-strong: rgba(255, 255, 255, 0.08);
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --text: #e5e7eb;
+  --text-dim: #94a3b8;
+
+  --primary: #5382e0;
+  --primary-hover: #2462d6;
+
+  --danger: #ef4444;
+  --danger-hover: #dc2626;
+
+  --radius: 12px;
+  --transition: all 0.2s ease;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top, #1c59db, #000000);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth feel */
+button,
+input {
+  font-family: inherit;
+}
